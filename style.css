@@ -57,7 +57,7 @@ button {
 header {
   position: absolute;
   width: 100%;
-  padding: 4em 1.5em;
+  padding: 6em 1.5em 0 0;
   z-index: 10;
 }
 
@@ -252,7 +252,7 @@ footer {
   }
 
   .hero__group-buttons {
-    right: -13.3em;
+    right: -13.5em;
   }
 
   .hero__button {
