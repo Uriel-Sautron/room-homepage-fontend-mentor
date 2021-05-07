@@ -243,7 +243,7 @@ footer {
   }
 
   .hero__content {
-    padding: 10em 9em 4em 9em;
+    padding: 10em 8em 4em 8em;
   }
 
   .hero__link {
@@ -258,7 +258,7 @@ footer {
   .hero__button {
     background-color: black;
     border: none;
-    padding: 2em 2.3em;
+    padding: 1.8em 2.3em;
   }
 
   .hero__button img {
@@ -268,5 +268,9 @@ footer {
 
   .section-bottom {
     display: flex;
+  }
+
+  .section-bottom__content {
+    padding: 6em 3em;
   }
 }
