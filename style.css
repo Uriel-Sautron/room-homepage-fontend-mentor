@@ -210,14 +210,14 @@ footer {
 
   .header__icons nav {
     display: flex;
-    margin-left: 6em;
+    margin-left: 4em;
   }
 
   .header__icons nav a {
     text-transform: lowercase;
     color: white;
     font-weight: 700;
-    margin-right: 3em;
+    margin-right: 2em;
   }
 
   .header__icons nav a:after {
@@ -258,7 +258,7 @@ footer {
   .hero__button {
     background-color: black;
     border: none;
-    padding: 1.8em 2.3em;
+    padding: 1.8em 2em;
   }
 
   .hero__button img {
@@ -271,6 +271,6 @@ footer {
   }
 
   .section-bottom__content {
-    padding: 6em 3em;
+    padding: 6em 4em;
   }
 }
