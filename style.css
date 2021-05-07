@@ -252,13 +252,13 @@ footer {
   }
 
   .hero__group-buttons {
-    right: -14em;
+    right: -13.5em;
   }
 
   .hero__button {
     background-color: black;
     border: none;
-    padding: 1.8em 2em;
+    padding: 1.8em 2.2em;
   }
 
   .hero__button img {
