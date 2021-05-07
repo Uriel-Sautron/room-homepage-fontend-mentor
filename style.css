@@ -1,0 +1,272 @@
+/* Font */
+@font-face {
+  font-family: "Spartan";
+  src: url("./asset/fonts/spartan/Spartan-VariableFont_wght.ttf");
+}
+
+/* Color */
+:root {
+  --dark-gray: hsl(0, 0%, 63%);
+  --black: hsl(0, 0%, 0%);
+  --white: hsl(0, 0%, 100%);
+  --very-dark-gray: hsl(0, 0%, 27%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Spartan";
+}
+
+body {
+  font-size: 0.75em;
+}
+
+.hidden {
+  display: none;
+}
+
+h1 {
+  font-size: 2.3em;
+  font-weight: 700;
+}
+
+p {
+  color: var(--dark-gray);
+  font-size: 1em;
+  font-weight: 600;
+  line-height: 1.7em;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* Header */
+header {
+  position: absolute;
+  width: 100%;
+  padding: 4em 1.5em;
+  z-index: 10;
+}
+
+.header__icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__icons nav {
+  display: none;
+}
+
+/* Header Modal Nav */
+.header__modal-nav {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.header__modal-content {
+  display: flex;
+  background-color: white;
+  padding: 4em 2em;
+  align-items: baseline;
+}
+
+.header__modal-content nav {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 6em;
+  width: 100%;
+}
+
+.header__modal-content nav a {
+  text-transform: lowercase;
+  color: var(--very-dark-gray);
+  font-weight: 700;
+  font-size: 1.1em;
+}
+
+/* Section Hero */
+.hero__banner {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+}
+
+.hero__group-buttons {
+  background-color: black;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.hero__button {
+  background-color: black;
+  border: none;
+  padding: 1.4em 1.6em;
+}
+
+.hero__button:hover {
+  background-color: var(--very-dark-gray);
+}
+
+.hero__button img {
+  width: 0.8em;
+  height: 1.2em;
+}
+
+.hero__picture {
+  height: 30em;
+  object-fit: cover;
+}
+
+.hero__content {
+  padding: 5.5em 2.3em;
+}
+
+.hero__content p {
+  margin-top: 1.5em;
+}
+
+.hero__link {
+  display: flex;
+  margin-top: 4em;
+}
+
+.hero__link:hover {
+  color: var(--very-dark-gray);
+}
+
+.hero__link a {
+  color: var(--very-dark-gray);
+  font-weight: 600;
+  letter-spacing: 0.8em;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.1em;
+  margin-right: 3em;
+}
+
+/* Section Bottom */
+
+.section-bottom img {
+  width: 100%;
+  /* max-width: 100%; */
+}
+
+.section-bottom__content {
+  padding: 5em 2.3em;
+}
+
+.section-bottom__content h2 {
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 700;
+  letter-spacing: 0.5em;
+}
+
+.section-bottom__content p {
+  margin-top: 1em;
+}
+
+/* Footer */
+footer {
+  color: var(--very-dark-gray);
+  font-weight: 500;
+  text-align: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  h1 {
+    font-size: 3em;
+    font-weight: 700;
+  }
+
+  .header__icons {
+    margin-left: 4em;
+    justify-content: start;
+  }
+
+  .header__icons button {
+    display: none;
+  }
+
+  .header__icons nav {
+    display: flex;
+    margin-left: 6em;
+  }
+
+  .header__icons nav a {
+    text-transform: lowercase;
+    color: white;
+    font-weight: 700;
+    margin-right: 3em;
+  }
+
+  .header__icons nav a:after {
+    margin-left: 0.8em;
+    content: "";
+    display: block;
+    height: 0.15em;
+    width: 0%;
+    margin-top: 0.5em;
+    background-color: white;
+  }
+
+  .header__icons nav a:hover:after {
+    width: 50%;
+  }
+
+  .hero {
+    display: flex;
+  }
+
+  .hero__picture {
+    height: 44.5em;
+  }
+
+  .hero__content {
+    padding: 10em 9em 4em 9em;
+  }
+
+  .hero__link {
+    margin-top: 3em;
+    margin-bottom: 3em;
+  }
+
+  .hero__group-buttons {
+    right: -13.3em;
+  }
+
+  .hero__button {
+    background-color: black;
+    border: none;
+    padding: 2em 2.3em;
+  }
+
+  .hero__button img {
+    width: 1.3em;
+    height: 1.9em;
+  }
+
+  .section-bottom {
+    display: flex;
+  }
+}
